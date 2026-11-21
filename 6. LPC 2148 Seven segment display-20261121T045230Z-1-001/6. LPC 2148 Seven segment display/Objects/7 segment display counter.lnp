@@ -1,0 +1,8 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\seg7.o"
+".\objects\main.o"
+--strict --scatter ".\Objects\7 segment display counter.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\7 segment display counter.map" -o ".\Objects\7 segment display counter.axf"
